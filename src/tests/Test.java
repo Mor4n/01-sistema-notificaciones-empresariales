@@ -28,7 +28,22 @@ public class Test {
             new SmsNotification("6321495145", "Su mensaje no pudo ser enviado con éxito"),
             new PushNotification("acxwp132", "Has recibido una nueva solicitud de amistad")};
         
+        int emailsCount = 0;
+        int smsCount = 0;
+        int pushCount = 0;
+
         
+        for (Notification notification : notifications) {
+
+            switch (notification) {
+                case EmailNotification email -> emailsCount++;
+                case SmsNotification sms -> smsCount++;
+                case PushNotification push -> pushCount++;
+            }
+            
+        }
+
+
 
 
     }
