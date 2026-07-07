@@ -26,7 +26,6 @@ public record EmailNotification(String email, String subject, String content) im
 
         }
 
-       
     }
 
 }
