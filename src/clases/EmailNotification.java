@@ -12,11 +12,11 @@ public record EmailNotification(String email, String subject, String content) im
         if(email.isBlank()){
             throw new IllegalArgumentException("El correo electrónico no puede estar en blanco");
         }
-
-        if(subject == null || subject.isBlank() ){
+        
+        if(subject.isBlank()){
             throw new IllegalArgumentException("El asunto del correo es obligatorio y no puede estar en blanco");
         }
-        if(content == null || content.isBlank()){
+        if(content.isBlank()){
             throw new IllegalArgumentException("El contenido del correo es obligatorio y no puede estar en blanco");
         }
 
