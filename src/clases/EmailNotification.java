@@ -2,8 +2,8 @@ package clases;
 
 public record EmailNotification(String email, String subject, String content) implements Notification{
 
+
     public EmailNotification{
-        
 
         if(email == null || subject == null || content == null){
             throw new IllegalArgumentException("Ningún campo debe ser null, por favor, llene el email, subject y content correctamnte");
