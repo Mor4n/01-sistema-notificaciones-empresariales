@@ -43,6 +43,11 @@ public class Test {
             
         }
 
+        System.out.println("========= RESUMEN =========");
+        System.out.println("Correos enviados: "+ emailsCount);
+        System.out.println("SMS enviados: "+ smsCount);
+        System.out.println("Push enviados: "+ pushCount);
+        System.out.println("Total: "+ (emailsCount+smsCount+pushCount));
 
 
 
